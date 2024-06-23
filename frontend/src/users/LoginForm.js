@@ -15,7 +15,7 @@ function LoginForm() {
 
     const [errorMessage, setErrorMessage] = useState(null)
 
-      
+
     async function handleSubmit(e) {
         e.preventDefault()
         const response = await fetch(`http://localhost:5000/authentication/`, {
@@ -38,7 +38,7 @@ function LoginForm() {
 
         console.log(data)
     }
-  
+
 
     return (
         <main>
@@ -81,7 +81,7 @@ function LoginForm() {
                 <input className="btn btn-primary" type="submit" value="Login" />
             </form>
         </main>
-    )
+    );
 }
 
 export default LoginForm
